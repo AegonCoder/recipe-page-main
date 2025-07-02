@@ -121,7 +121,7 @@ h2 {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
     body {
         padding-top: 4rem;
         padding-bottom: 4rem;

@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    background-color: hsl(330, 100%, 98%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.Recipe {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 30rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Recipe img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    color: hsl(24, 5%, 18%);
+}
+
+.Preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.Preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-title {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Preparation ul {
+    padding-left: 1.5rem;
+}
+
+.Preparation li {
+    color: hsl(24, 5%, 18%);
+    padding-left: 0.5rem;
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+}
+
+.prep-subtitle {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+.Ingredients li,
+.Instructions li {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.Ingredients ul ::marker,
+.Instructions ol ::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.instruction-step {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.nutrition-table tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+.nutrition-table th {
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+.nutrition-table td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.attribution {
+    margin-top: 3rem;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .Recipe {
+        width: 30rem;
+        padding: 2rem;
+    }
+
+    .prep-title {
+        font-size: 1.2rem;
+    }
+
+    .Preparation li,
+    .Ingredients li,
+    .Instructions li {
+        font-size: 1rem;
+    }
+
+    .nutrition-table th,
+    .nutrition-table td {
+        padding: 0.8rem 1.5rem;
+    }
+}
